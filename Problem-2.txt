@@ -1,0 +1,32 @@
+<html>
+<script>
+function submit()
+{
+	var i = parseInt(document.getElementById("inputval").value)
+	let output = "";
+	if(i%2!=0)
+	{
+		for(j=1;j<=i+i;j=j+1)
+		{
+			if(j%2!=0)
+			{
+				output += j + "<br>";
+			}	
+			document.getElementById("demo").innerHTML = output;
+		}
+	}
+	else
+	{
+		for(j=1;j<i+i-1;j=j+1)
+		{
+			if(j%2!=0)
+				output += j + "<br>";
+		}
+		document.getElementById("demo").innerHTML = output;
+	}
+}
+</script>
+<input id="inputval" type="input"></input>
+<button id="submit" onClick="submit()">Submit</button>
+<p id="demo"></p>
+</html>

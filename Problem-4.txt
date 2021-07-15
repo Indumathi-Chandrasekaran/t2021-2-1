@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			.header
+			{
+				background-color: #9933cc;
+			}
+			.second_row
+			{
+				padding:10px;
+			}
+			.sub_section1
+			{
+				background-color: #33b5e5;
+				
+				margin-top:10px;
+			} 
+			.footer
+			{
+				background-color: #0099cc;	
+				margin-top: 480px;
+			}
+			@media only screen and (max-width: 768px) 
+			{
+				
+				.section3
+				{
+					width: 100%;
+					height: 80px;
+					float: left;
+					background-color: #33b5e5;
+					margin-top: 335px;
+				}
+				.sub_section
+				{
+					background-color: #33b5e5;
+					margin-top:10px;
+					height:40px;
+				} 
+				.section1
+				{
+					width: 25%;
+					float:left; 
+					height:50px;
+				}
+			}
+			@media only screen and (max-width: 767px) 
+			{
+				.section1
+				{
+					width: 100%;
+					float:none;
+				}
+				.sub_section
+				{
+					background-color: #33b5e5;
+					margin-top:10px;
+					float:left; 
+					width:100%; 
+					height:40px;
+				} 
+				.section3
+				{
+					width: 100%;
+					height: 80px;
+					float: left;
+					background-color: #33b5e5;
+					margin-top: 235px;
+				}
+			}
+			@media only screen and (min-width: 769px) 
+			{
+				.section1
+				{
+					width: 25%;
+					float:left; 
+					height:50px;
+				}
+				.section3
+				{
+					float:right; 
+					width:25%;
+				}
+				.sub_section1
+				{
+					float:left; 
+					width:100%; 
+					height:460px;
+				}
+				.sub_section
+				{
+					background-color: #33b5e5;
+					margin-top:10px;
+					height:40px;
+				} 
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="header" style="width:100%; height:100px;"></div>
+		<div class="second_row">
+			<div class="section1">
+				<div class="sub_section"></div>
+				<div class="sub_section"></div>
+				<div class="sub_section"></div>
+				<div class="sub_section"></div>
+			</div>
+			<div class="section2" style="float:left; width:50%;"></div>
+			<div class="section3">
+				<div class="sub_section1" style=""></div>
+			</div>
+			
+		</div>
+		<div class="footer" style="width:100%; height:50px;"></div>
+	</body>
+</html>

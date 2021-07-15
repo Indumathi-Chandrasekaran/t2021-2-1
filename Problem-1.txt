@@ -1,0 +1,45 @@
+import java.io.*;
+import java.lang.*;
+import java.lang.Math;
+import java.util.Scanner;
+class Simple_calculator {
+  public static void main(String[] args) {
+
+    char operator;
+    Double a, b, fin_result;
+    Scanner input = new Scanner(System.in);
+	System.out.println("Choose the type of operator you want to perform: +, -, *, or /");
+    operator = input.next().charAt(0);
+	System.out.println("Enter first number");
+    a = input.nextDouble();
+    System.out.println("Enter second number");
+    b = input.nextDouble();
+    switch (operator) {
+
+      case '+':
+        fin_result = a + b;
+        System.out.println(a + " + " + b + " = " + fin_result);
+        break;
+
+      case '-':
+        fin_result = a - b;
+        System.out.println(a + " - " + b + " = " + fin_result);
+        break;
+
+      case '*':
+        fin_result = a * b;
+        System.out.println(a + " * " + b + " = " + fin_result);
+        break;
+
+      case '/':
+        fin_result = a / b;
+        System.out.println(a + " / " + b + " = " + fin_result);
+        break;
+
+      default:
+        System.out.println("Invalid operator!");
+        break;
+    }
+    input.close();
+  }
+}
